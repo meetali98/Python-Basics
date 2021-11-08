@@ -1,0 +1,38 @@
+IN JUPITER NOTEBOOK
+
+**commands to run in jupiter notebook
+1.pwd ---> to get the current location of your jupiter notebook
+
+2. %%writefile file_name.txt ---> to create a .txt file in jupiter notebook
+
+**Methods
+1. variable_name = open('file_name.txt') ---> to open a file
+
+2. variable-.read() --->will return a large string which has everything in that file
+Note: there is a cursor reading the file upon running the above method.
+if you run the method once again, the o/p will be an empty string
+to bring the cursor back to the first position, use the below command
+
+3. variable_name.seek(0) ---> '0' for initial position, will return 0 has o/p
+
+4. variable_name.readlines() ---> returns a list with each line as a separate string element
+
+NOTE: when you open a file with the open() method, it is necessary to close it to avoid any errors in future
+One way of doing that
+5. varaible_name.close()
+
+OR with special 'with' statement (new way of opening a file!)
+Syntax -- > with open(file_name.txt) as variable_name:
+                #can write any code under this
+*Writing in a file
+Reading, Writing, Appending Modes
+mode = 'r' ---> read only
+mode = 'w' ---> write only (will overwrite file or create new)
+mode = 'a' ---> append only (will add onto files)
+mode = 'r+' ---> reading and writing
+mode = 'w+' ---> writing and reading (will overwrite file or create new)
+
+to write a file ---> variable.write('text to write')
+
+to find what a method does----> help keyword
+ex: help(mylist.insert)
